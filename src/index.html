@@ -1,14 +1,38 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <script  type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBKl4FzYU9ul10PZuo8G2KtLAbcLMNxVJA"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+<script>  
+    // !important: You want to give this variable(var googleLoaded = false;). This is used to run multiple chart in your jade.
+    var googleLoaded = false;
+    // !important: Define which chart packages to preload.Because this package uses ChartWrappers you can use any chart type that Google supports, but if it // isn't loaded it will load it on demand. 
+    var googleChartsPackagesToLoad = ['geochart'];
+</script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<style>
+body{
+    color: rgb(200,200,200);
+    font-family: 'Titillium Web';
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    background-color: rgb(25,35,45);
+}
+
+</style>
   <meta charset="utf-8">
   <title>POC</title>
   <base href="/">
+  <!-- Latest compiled and minified CSS -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
-<body>
-  <app-root></app-root>
+<body >
+  <app-root></app-root> 
+  
 </body>
 </html>

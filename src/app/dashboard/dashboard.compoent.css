@@ -282,3 +282,6 @@ body{
                 filter: blur(0);
     }
 }
+.button {
+    color: white;
+}

@@ -1,0 +1,56 @@
+      
+
+<main class="container">
+      <my-cities></my-cities>
+  <div class="card-wrapper">
+<section *ngFor="let city of cities" class="card anim-flip" >
+            <header>
+                <h1 class="card-header">{{city.name}}</h1>
+            </header>
+            <p class="card-temp box-highlight">{{city.temperature}}</p>
+            <div class="icon">
+                
+                    
+                    <div *ngIf="city.weather=='Clear'">
+                        <div class="cloud-group">
+                        <div class="sun-group">
+                    <span class="icon-cloud sun"></span>
+                    <span class="icon-cloud sunshine"></span>
+                     <span class="icon-cloud cloud-circle shadow-cloud-clip"></span>
+                      <span class="icon-cloud cloud-base shadow-cloud-clip"></span>
+                    </div>
+                         </div> 
+                    </div> 
+                    <div *ngIf="city.weather=='Rain'">
+                    <div class="cloud-group">
+                    <span class="icon-cloud cloud-circle shadow-cloud-clip"></span>
+                    <span class="icon-cloud cloud-base shadow-cloud-clip"></span>
+                    <div class="rain-group">
+                        <span class="icon-cloud rain"></span>
+                    </div>
+                </div>
+                    </div>
+
+
+                     <div *ngIf="city.weather=='Clouds'">
+                                                 <div class="cloud-group">
+
+                    <span class="icon-cloud cloud-circle shadow-cloud-clip"></span>
+                    <span class="icon-cloud cloud-base shadow-cloud-clip"></span>
+                    </div>
+                    </div>
+
+                   
+                            
+
+            </div>
+           
+        </section>
+  </div>
+        </main>
+
+        
+
+ 
+
+ 
